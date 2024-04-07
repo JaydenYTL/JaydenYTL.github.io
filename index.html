@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello there! I'm a dedicated individual with a passion for both frontend development and the world of art. With a strong interest in frontend technologies such as HTML, CSS, and JavaScript, coupled with my creative flair and eye for aesthetics, I strive to bridge the gap between technology and artistry in every project I undertake.">
+    <meta name="keywords" content="frontend development, HTML, CSS, JavaScript, art, design">
+    <meta name="author" content="Yap Thean Lok">
+
+    
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="index.css">
+
+    <title>Yap Thean Lok - Portfolio</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-21K02V9H0E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-21K02V9H0E');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Portfolio</p>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="aboutme.html" class="nav-link">About Me</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="daily.html" class="nav-link">Daily</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Yap Thean Lok</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>BMC Student with passionate in Graphic Design
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button onclick="window.location.href='aboutme.html'" class="btn blue-btn">Know Me</button>
+                    </div>
+                    
+                    <div class="social_icons">
+                        <a href="" class="icon"><i class="uil uil-instagram"></i></a>
+                        <a href="" class="icon"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="https://github.com/JaydenYTL" class="icon"><i class="uil uil-github-alt"></i></a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="images/PassportPic.jpg" alt="YAPTHEANLOK">
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+<!-- ----- TYPING JS Link ----- -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+<!-- ----- MAIN JS ----- -->
+<script>
+    /* ----- TYPING EFFECT ----- */
+    var typingEffect = new Typed(".typedText", {
+        strings: ["Student", "Art Lover", "Frontend Lover"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 2000
+    })
+
+</script>
+
+
+</html>
